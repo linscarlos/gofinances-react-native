@@ -4,6 +4,7 @@ import 'intl/locale-data/jsonp/pt-BR';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
 import React from 'react';
+import { StatusBar } from 'react-native';
 import * as SplashScreen from 'expo-splash-screen';
 import { ThemeProvider } from 'styled-components';
 import theme from './src/global/styles/theme'
@@ -40,6 +41,7 @@ export default function App() {
     <ThemeProvider theme={theme}>
       
         <NavigationContainer>
+          <StatusBar barStyle="light-content" />
           <AppRoutes />
         </NavigationContainer>
         
